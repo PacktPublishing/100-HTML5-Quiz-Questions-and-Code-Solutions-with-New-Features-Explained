@@ -1,0 +1,68 @@
+Pattern Resources https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+Try and test Regex - https://regexr.com/
+
+Audio Video Content https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content
+
+validate HTML - https://validator.w3.org/
+
+caniuse - https://caniuse.com/?search=canvas
+
+Editor https://code.visualstudio.com/
+
+Browser Chrome devtools - https://developers.google.com/web/tools/chrome-devtools
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML</title>
+  </head>
+  <body>
+    <div style="height: 100px;"></div>
+    <h3>Ingredients</h3>
+    <ul contenteditable="true">
+      <li>Eggs</li>
+      <li>Sausages</li>
+      <li>Cucumbers</li>
+    </ul>
+    <div style="height: 500px;"></div>
+    <canvas id="mycanvas" width="300" height="300" style="background: blue">
+    </canvas>
+    <script>
+      var canvas = document.getElementById("mycanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(100, 100, 100, 100);
+    </script>
+    <figure>
+      <img src="https://dummyimage.com/300x200/000/fff"
+        alt="Some Image">
+      <figcaption>Placeholder Image</figcaption>
+    </figure>
+    <form oninput="x.value=parseInt(a.value)-parseInt(b.value)">
+      <input type="number" id="a" value="50" min=10 max=100> -
+      <input type="number" id="b" value="50" min=10 max=100>
+      =<output name="x" for="a b"></output>
+    </form>
+    Hello <mark>World</mark>
+    <details>
+      <summary>Details</summary>
+      Hello World Details content of details........
+    </details>
+    <form method="GET" >
+      <input type="text" placeholder="User Name" minlength="2" >
+      Search <input type="search">
+      <input type="url">
+      <input type="email" placeholder="Email" >
+      <input type="tel" pattern="[0-5]{2}" >
+      <input name="color" type="color">
+      <input type="month" name="date" max="2021-05">
+      <select name="pets" multiple>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="mouse">Mouse</option>
+      </select>
+      <input type="submit">
+    </form>
+  </body>
+</html>
